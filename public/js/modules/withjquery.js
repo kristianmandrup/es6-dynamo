@@ -16,7 +16,7 @@ System.register(["jquery"], function (_export, _context) {
       $(document).ready(function () {
         console.log("jQuery ready!");
       });
-      $("html").css('background-color', 'red');
+      $("html").css('background-color', 'green');
 
       _export("mega", mega = mega);
 
@@ -24,3 +24,4 @@ System.register(["jquery"], function (_export, _context) {
     }
   };
 });
+//# sourceMappingURL=withjquery.js.map

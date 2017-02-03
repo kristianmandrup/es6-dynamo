@@ -5,6 +5,6 @@ $.ready
 $( document ).ready(function() {
   console.log("jQuery ready!");
 });
-$("html").css('background-color','red');
+$("html").css('background-color','green');
 
 export var mega = mega;

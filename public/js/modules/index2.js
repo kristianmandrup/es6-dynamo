@@ -14,3 +14,4 @@ System.register(['app.js'], function (_export, _context) {
     }
   };
 });
+//# sourceMappingURL=index2.js.map

@@ -1,0 +1,1 @@
+{"version":3,"sources":["index2.js"],"names":["app","console","log","name","size"],"mappings":";;;;;;;;AAAQA,S,UAAAA,G;;;AACRC,cAAQC,GAAR,CAAYF,IAAIG,IAAhB;AACAF,cAAQC,GAAR,CAAYF,IAAII,IAAhB","file":"index2.js","sourcesContent":["import {app} from 'app.js';\nconsole.log(app.name);\nconsole.log(app.size);\n"]}

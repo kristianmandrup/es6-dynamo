@@ -32,3 +32,4 @@ System.register(['view.js', 'static.js'], function (_export, _context) {
           }
      };
 });
+//# sourceMappingURL=app.js.map

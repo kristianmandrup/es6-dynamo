@@ -1,0 +1,1 @@
+{"version":3,"sources":["view.js"],"names":["View","size","view"],"mappings":";;;;;;;;;;;;;;;;AAAMA,U,GACJ,gBAAa;AAAA;;AACR,aAAKC,IAAL,GAAY,GAAZ;AACH,O;;sBAEOC,I,GAAO,IAAIF,IAAJ,E","file":"view.js","sourcesContent":["class View {\r\n  constructor(){\r\n       this.size = 960;\r\n   }\r\n}\r\nexport let view = new View();\r\n"]}
