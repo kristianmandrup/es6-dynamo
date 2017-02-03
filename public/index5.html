@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>ES2015 Module Example</title>
+        <link rel="prefetch" href="js/vendor/system.js">
+    </head>
+    <body>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/es6-shim/0.35.1/es6-shim.js"></script>
+        <script src="js/vendor/system.js"></script>
+        <script>
+            System.config({
+              "paths": { "jquery": "js/vendor/jquery.js" }
+            });
+            System.import("js/modules/withjquery.js").then(function (m) {
+              console.log(m.mega);
+            });
+         </script>
+         <p>Loading jquery as part of a module. Includes shim for IE11 and other browsers that do not understand Promises.</p>
+         <a href="index.html">Page 1</a>
+         <a href="index2.html">Page 2</a>
+         <a href="index3.html">Page 3</a>
+         <a href="index3.html">Page 4</a>
+    </body>
+</html>

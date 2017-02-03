@@ -1,0 +1,14 @@
+{
+  "name": "es6",
+  "version": "1.0.0",
+  "description": "ES6 modules, transpiled, dynamic loading.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ferdy Christant",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-plugin-transform-es2015-modules-systemjs": "^6.22.0"
+  }
+}

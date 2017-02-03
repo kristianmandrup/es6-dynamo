@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>ES2015 Module Example</title>
+        <link rel="prefetch" href="js/vendor/system.js">
+    </head>
+    <body>
+        <script src="js/vendor/system.js"></script>
+        <script>
+            System.config({ "baseURL": "js/modules" });
+            Promise.all([
+                System.import('app.js'),
+                System.import('library.js')
+            ]).then(function(modules) {
+                var myApp = modules[0];
+                console.log(myApp.app.name);
+                console.log(myApp.app.size);
+                var library = modules[1];
+                console.log(library.calcCircumference(200));
+            });
+         </script>
+         <p>In-browser direct dynamic loading of multiple modules, that may have other module dependencies, run code only when all are ready.</p>
+         <a href="index.html">Page 1</a>
+         <a href="index2.html">Page 2</a>
+         <a href="index3.html">Page 3</a>
+         <a href="index5.html">Page 5</a>
+    </body>
+</html>

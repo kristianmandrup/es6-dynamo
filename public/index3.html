@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>ES2015 Module Example</title>
+        <link rel="prefetch" href="js/vendor/system.js">
+    </head>
+    <body>
+        <script src="js/vendor/system.js"></script>
+        <script>
+            System.config({ "baseURL": "js/modules" });
+            System.import("app.js").then(function ($) {
+              console.log($.app.name);
+              console.log($.app.size);
+              $.app.world.regions.print();
+            });
+         </script>
+         <p>In-browser direct dynamic loading of a single module, that may have other module dependencies.</p>
+         <a href="index.html">Page 1</a>
+         <a href="index2.html">Page 2</a>
+         <a href="index4.html">Page 4</a>
+         <a href="index5.html">Page 5</a>
+    </body>
+</html>
