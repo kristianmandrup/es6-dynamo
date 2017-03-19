@@ -1,0 +1,69 @@
+$gutter-size: 1em;
+@mixin gridsize() {
+  & — 18 { flex: 0 0 12.5% !important; }
+  & — 16 { flex: 0 0 16.6666% !important; }
+  & — 15 { flex: 0 0 20% !important; }
+  & — 14 { flex: 0 0 25% !important; }
+  & — 13 { flex: 0 0 33.3333% !important; }
+  & — 12 { flex: 0 0 50% !important; }
+  & — 23 { flex: 0 0 66.6666% !important; }
+  & — 34 { flex: 0 0 75% !important; }
+  & — 11 { flex: 0 0 100% !important; }
+}
+.#{$class-prefix} grid {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  & — gutters {
+    margin-left: -$gutter-size;
+
+    & > .#{$class-prefix} grid__cell {
+      padding-left: $gutter-size !important;
+    }
+  }
+
+  & — vgutters {
+    & > .#{$class-prefix}grid__cell {
+      margin-bottom: $gutter-size !important;
+    }
+  }
+  /* items alignment, horizontal */
+  & — left { justify-content: flex-start; }
+  & — center { justify-content: center; }
+  & — right { justify-content: flex-end; }
+  & — around { justify-content: space-around; }
+  & — between { justify-content: space-between; }
+  /* items alignment, vertical */
+  & — top { align-items: flex-start; }
+  & — bottom { align-items: flex-end; }
+  & — middle { align-items: center; }
+
+  & &__cell {
+    flex: 1;
+    min-width: 0;
+
+    /* cell alignment, horizontal */
+    & — left { margin-right: auto; }
+    & — center { margin-left: auto; margin-right: auto; }
+    & — right { margin-left:auto; }
+    /* cell alignment, vertical */
+    & — top { align-self: flex-start; }
+    & — bottom { align-self: flex-end; }
+    & — middle { align-self: center; }
+
+    /* cell sizing */
+    @include gridsize();
+
+    /* breakpoint-specific cell sizing */
+    @each $breakpoint in map-keys($site_breakpoints) {
+      @media screen and #{map-deep-get($site_breakpoints, $breakpoint, “mq”)} {
+        &-#{$breakpoint} {
+          @include gridsize();
+        }
+      }
+    }
+  }
+}

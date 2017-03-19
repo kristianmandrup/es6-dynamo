@@ -1,5 +1,5 @@
 {
-  "name": "es6",
+  "name": "es6-dynamo",
   "version": "1.0.0",
   "description": "ES6 modules, transpiled, dynamic loading.",
   "main": "index.js",
