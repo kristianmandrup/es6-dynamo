@@ -9,6 +9,13 @@ To get a general idea, read the [jungledragon strategy](https://ferdychristant.c
 - A new **Design System**
 - A new **Component System**
 
+## Silva design system
+
+The project contains Silva design system in `src/styles`
+
+- Flexbox Grid system: `silva.sass` and `silva.styl`
+- Full css example: `main.css`
+
 ## To run
 
 Look at the `gulpfile` and have fun :)
