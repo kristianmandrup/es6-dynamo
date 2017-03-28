@@ -4,10 +4,13 @@ Based on [silva-earth](https://ferdychristant.com/introducing-silva-earth-8787fc
 
 Read the other recent (early 2017) [Web Tech articles](https://ferdychristant.com/tagged/web-development) on the framework for **JungleDragon** and **Silva** to get the general idea.
 
-To get a general idea, read the [jungledragon strategy](https://ferdychristant.com/jungledragon-strategy-update-99d5f1e7a19f#.xf8ijnay7)
+To get a general idea, read the [jungledragon strategy](https:// ferdychristant.com/jungledragon-strategy-update-99d5f1e7a19f#.xf8ijnay7)
 
 - A new **Design System**
 - A new **Component System**
+
+[ES6 modules as components](https://ferdychristant.com/es6-modules-as-components-32a7b81fe9be) lays the foundation.
+
 
 ## Silva design system
 
