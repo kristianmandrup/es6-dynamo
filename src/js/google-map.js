@@ -1,3 +1,5 @@
+// https://gist.github.com/fchristant/02a38260b55961461968eaa721a4abe7
+
 import Component from './component.js';
 class GoogleMap extends Component {
 

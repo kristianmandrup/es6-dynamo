@@ -11,6 +11,7 @@ To get a general idea, read the [jungledragon strategy](https:// ferdychristant.
 
 [ES6 modules as components](https://ferdychristant.com/es6-modules-as-components-32a7b81fe9be) lays the foundation.
 
+Also see [gist](https://gist.github.com/fchristant) on how to use it...
 
 ## Silva design system
 
