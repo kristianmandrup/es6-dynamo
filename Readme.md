@@ -1,5 +1,7 @@
 # Silva light
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/kristianmandrup/es6-dynamo.svg)](https://greenkeeper.io/)
+
 Based on [silva-earth](https://ferdychristant.com/introducing-silva-earth-8787fc404ae6#.hejwx7j6m)
 
 Read the other recent (early 2017) [Web Tech articles](https://ferdychristant.com/tagged/web-development) on the framework for **JungleDragon** and **Silva** to get the general idea.
